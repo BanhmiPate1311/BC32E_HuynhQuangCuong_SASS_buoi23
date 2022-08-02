@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Our Custom CSS -->
+
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <img src="./img/crest.png" alt="" />
+        </div>
+
+        <ul class="list-unstyled components">
+          <li>
+            <a
+              href="#homeSubmenu"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >Home</a
+            >
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+              <li>
+                <a href="#">Wavy</a>
+              </li>
+              <li>
+                <a href="#">Sunny</a>
+              </li>
+              <li>
+                <a href="#">Shady</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="active">
+            <a
+              href="#aboutSubmenu"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >About</a
+            >
+            <ul class="collapse list-unstyled" id="aboutSubmenu">
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">About Mentor</a>
+              </li>
+              <li>
+                <a href="#">Our team</a>
+              </li>
+              <li>
+                <a href="#">History</a>
+              </li>
+              <li>
+                <a href="#">Testimonials</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <a href="#">Coming soon</a>
+              </li>
+              <li>
+                <a href="#">404</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a
+              href="#coursesSubmenu"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >Courses</a
+            >
+            <ul class="collapse list-unstyled" id="coursesSubmenu">
+              <li>
+                <a href="#">Courses</a>
+              </li>
+              <li>
+                <a href="#">Single Courses</a>
+              </li>
+              <li>
+                <a href="#">Schedule</a>
+              </li>
+              <li>
+                <a href="#">Workshop</a>
+              </li>
+              <li>
+                <a href="#">Workshops & Events</a>
+              </li>
+              <li>
+                <a href="#">Get Quote</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a
+              href="#blogSubmenu"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >Blog</a
+            >
+            <ul class="collapse list-unstyled" id="blogSubmenu">
+              <li>
+                <a href="#">Standard view</a>
+              </li>
+              <li>
+                <a href="#">Columms view</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a
+              href="#shopSubmenu"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >Shop</a
+            >
+            <ul class="collapse list-unstyled" id="shopSubmenu">
+              <li>
+                <a href="#">Products</a>
+              </li>
+              <li>
+                <a href="#">Cart</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a
+              href="#elementSubmenu"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >Element</a
+            >
+            <ul class="collapse list-unstyled" id="elementSubmenu">
+              <li>
+                <a href="#">Base</a>
+              </li>
+              <li>
+                <a href="#">Common</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="contact-sidebar">
+          <a href="#" class="button">
+            <i class="fa-solid fa-phone-flip"></i>
+            <span>(+1) 555 234-8765</span>
+          </a>
+        </div>
+        <span class="contact_icon">
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </span>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content">
+        <header class="header">
+          <div class="container_">
+            <div class="nav-logo">
+              <button type="button" id="sidebarCollapse" class="navbar_toggler">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <a class="navbar_brand" href="#"
+                ><img src="./img/crest.png" alt="..."
+              /></a>
+            </div>
+            <div class="navbar_link">
+              <ul>
+                <li>
+                  <a href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Courses</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                  <a href="#">Shop</a>
+                </li>
+                <li>
+                  <a href="#">Elements</a>
+                </li>
+              </ul>
+              <div class="contactbar">
+                <div class="contact-item">
+                  <a href="#" class="button">
+                    <i class="fa-solid fa-phone-flip"></i>
+                    <span>(+1) 555 234-8765</span>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="aboutUs">
+          <div class="container_">
+            <div class="intro">
+              <h1>ABOUT US</h1>
+              <span>The language teaching experts</span>
+            </div>
+            <div class="image">
+              <img src="./img/hero_team.png" alt="..." />
+            </div>
+          </div>
+        </section>
+        <section class="team">
+          <div class="container_">
+            <div class="team-row">
+              <div class="team-col">
+                <div class="team-item">
+                  <img src="./img/teacher_1.jpg" alt="" />
+                  <div class="team-detail">
+                    <span>ITALIAN</span>
+                    <h2>July Roberts</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="team-col">
+                <div class="team-item">
+                  <img src="./img/teacher_2.jpg" alt="" />
+                  <div class="team-detail">
+                    <span>ITALIAN</span>
+                    <h2>July Roberts</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="team-col">
+                <div class="team-item">
+                  <img src="./img/teacher_3.jpg" alt="" />
+                  <div class="team-detail">
+                    <span>ITALIAN</span>
+                    <h2>July Roberts</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="team-col">
+                <div class="team-item">
+                  <img src="./img/teacher_4.jpg" alt="" />
+                  <div class="team-detail">
+                    <span>ITALIAN</span>
+                    <h2>July Roberts</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="team-col">
+                <div class="team-item">
+                  <img src="./img/teacher_5.jpg" alt="" />
+                  <div class="team-detail">
+                    <span>ITALIAN</span>
+                    <h2>July Roberts</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="team-col">
+                <div class="team-item">
+                  <img src="./img/teacher_6.jpg" alt="" />
+                  <div class="team-detail">
+                    <span>ITALIAN</span>
+                    <h2>July Roberts</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="team-col">
+                <div class="team-item">
+                  <img src="./img/teacher_7.jpg" alt="" />
+                  <div class="team-detail">
+                    <span>ITALIAN</span>
+                    <h2>July Roberts</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="team-col">
+                <div class="team-item">
+                  <img src="./img/teacher_8.jpg" alt="" />
+                  <div class="team-detail">
+                    <span>ITALIAN</span>
+                    <h2>July Roberts</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Popper.JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#sidebarCollapse").on("click", function () {
+          $("#sidebar").toggleClass("active");
+          $(this).toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
