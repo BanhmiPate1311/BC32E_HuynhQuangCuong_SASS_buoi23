@@ -164,8 +164,14 @@
   .container_ {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 992px) {
+      display: block;
+    }
     .intro {
       width: 50%;
+      @media screen and (max-width: 992px) {
+        width: 100%;
+      }
       h1 {
         font-size: 16.5px;
         color: #b61984;
@@ -180,6 +186,9 @@
     }
     .image {
       width: 50%;
+      @media screen and (max-width: 992px) {
+        width: 100%;
+      }
       img {
         width: 100%;
       }

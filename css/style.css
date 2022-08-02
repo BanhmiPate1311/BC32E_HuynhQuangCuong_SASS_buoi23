@@ -148,8 +148,18 @@
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 992px) {
+  .aboutUs .container_ {
+    display: block;
+  }
+}
 .aboutUs .container_ .intro {
   width: 50%;
+}
+@media screen and (max-width: 992px) {
+  .aboutUs .container_ .intro {
+    width: 100%;
+  }
 }
 .aboutUs .container_ .intro h1 {
   font-size: 16.5px;
@@ -164,6 +174,11 @@
 }
 .aboutUs .container_ .image {
   width: 50%;
+}
+@media screen and (max-width: 992px) {
+  .aboutUs .container_ .image {
+    width: 100%;
+  }
 }
 .aboutUs .container_ .image img {
   width: 100%;
