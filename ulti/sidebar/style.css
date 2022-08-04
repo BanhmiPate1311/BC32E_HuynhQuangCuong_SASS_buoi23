@@ -51,10 +51,12 @@ a:focus {
   max-width: 250px;
   color: #181818;
   transition: all 0.3s;
+  margin-left: -250px;
 }
 
 #sidebar.active {
-  margin-left: -250px;
+  margin-left: 0;
+  /* overflow: hidden; */
 }
 
 #sidebar .sidebar-header {
@@ -98,10 +100,14 @@ a[data-toggle="collapse"] {
   transform: translateY(-50%);
 }
 
+#sidebar .contact-sidebar {
+  margin-bottom: 14px;
+}
+
 ul ul a {
   font-size: 0.9em !important;
   padding-left: 30px !important;
-  background: #6d7fcc;
+  background: #fff;
 }
 
 ul.CTAs {
@@ -143,7 +149,7 @@ a.article:hover {
 ----------------------------------------------------- */
 
 @media (min-width: 1200px) {
-  #sidebar {
+  #sidebar.active {
     margin-left: -250px;
   }
 

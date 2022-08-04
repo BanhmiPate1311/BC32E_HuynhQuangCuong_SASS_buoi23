@@ -7,6 +7,27 @@
 
     <title>Collapsible sidebar using Bootstrap 4</title>
 
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Roboto FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Montserrat font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Bootstrap CSS CDN -->
     <link
       rel="stylesheet"
@@ -15,6 +36,7 @@
       crossorigin="anonymous"
     />
 
+    <!-- Font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -202,11 +224,13 @@
 
       <!-- Page Content  -->
       <div id="content">
-        <header class="header">
+        <header id="header">
+          <div class="background-top"></div>
           <div class="container_">
             <div class="nav-logo">
               <button type="button" id="sidebarCollapse" class="navbar_toggler">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars open"></i>
+                <i class="fa-solid fa-xmark close"></i>
               </button>
 
               <a class="navbar_brand" href="#"
@@ -268,108 +292,253 @@
             </div>
           </div>
         </section>
-        <section class="team">
+        <section class="team-list">
           <div class="container_">
-            <div class="team-row">
-              <div class="team-col">
-                <div class="team-item">
+            <div class="grid-container">
+              <div
+                class="grid-item wow animate__animated animate__fadeIn"
+                data-wow-delay="0.25s"
+              >
+                <div class="thumbnail">
                   <img src="./img/teacher_1.jpg" alt="" />
-                  <div class="team-detail">
-                    <span>ITALIAN</span>
-                    <h2>July Roberts</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    </p>
-                  </div>
+                </div>
+                <div class="detail">
+                  <span>ITALIAN</span>
+                  <h4>July Roberts</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  </p>
                 </div>
               </div>
-              <div class="team-col">
-                <div class="team-item">
+              <div
+                class="grid-item wow animate__animated animate__fadeIn"
+                data-wow-delay="0.5s"
+              >
+                <div class="thumbnail">
                   <img src="./img/teacher_2.jpg" alt="" />
-                  <div class="team-detail">
-                    <span>ITALIAN</span>
-                    <h2>July Roberts</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    </p>
-                  </div>
+                </div>
+                <div class="detail">
+                  <span>FRENCH</span>
+                  <h4>Jon Stone</h4>
+                  <p>Nanotechnology immersion along the information.</p>
                 </div>
               </div>
-              <div class="team-col">
-                <div class="team-item">
+              <div
+                class="grid-item wow animate__animated animate__fadeIn"
+                data-wow-delay="0.75s"
+              >
+                <div class="thumbnail">
                   <img src="./img/teacher_3.jpg" alt="" />
-                  <div class="team-detail">
-                    <span>ITALIAN</span>
-                    <h2>July Roberts</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    </p>
-                  </div>
+                </div>
+                <div class="detail">
+                  <span>JAPANESE</span>
+                  <h4>Emma Stone</h4>
+                  <p>
+                    Bring to the table win-win survival strategies to ensure.
+                  </p>
                 </div>
               </div>
-              <div class="team-col">
-                <div class="team-item">
+              <div
+                class="grid-item wow animate__animated animate__fadeIn"
+                data-wow-delay="1s"
+              >
+                <div class="thumbnail">
                   <img src="./img/teacher_4.jpg" alt="" />
-                  <div class="team-detail">
-                    <span>ITALIAN</span>
-                    <h2>July Roberts</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    </p>
-                  </div>
+                </div>
+                <div class="detail">
+                  <span>CHINESE</span>
+                  <h4>Mark Lee</h4>
+                  <p>
+                    Proactive domination. At the end of the day, going forward.
+                  </p>
                 </div>
               </div>
-              <div class="team-col">
-                <div class="team-item">
+              <div
+                class="grid-item bottom wow animate__animated animate__fadeIn"
+                data-wow-delay="0.25s"
+              >
+                <div class="thumbnail">
                   <img src="./img/teacher_5.jpg" alt="" />
-                  <div class="team-detail">
-                    <span>ITALIAN</span>
-                    <h2>July Roberts</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    </p>
-                  </div>
+                </div>
+                <div class="detail">
+                  <span>RUSSIAN</span>
+                  <h4>John Doe</h4>
+                  <p>A new normal that has evolved from generation X.</p>
                 </div>
               </div>
-              <div class="team-col">
-                <div class="team-item">
+              <div
+                class="grid-item bottom wow animate__animated animate__fadeIn"
+                data-wow-delay="0.5s"
+              >
+                <div class="thumbnail">
                   <img src="./img/teacher_6.jpg" alt="" />
-                  <div class="team-detail">
-                    <span>ITALIAN</span>
-                    <h2>July Roberts</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    </p>
-                  </div>
+                </div>
+                <div class="detail">
+                  <span>SWEDEN</span>
+                  <h4>Jane Smith</h4>
+                  <p>Heading towards a streamlined cloud solution.</p>
                 </div>
               </div>
-              <div class="team-col">
-                <div class="team-item">
+              <div
+                class="grid-item bottom wow animate__animated animate__fadeIn"
+                data-wow-delay="0.75s"
+              >
+                <div class="thumbnail">
                   <img src="./img/teacher_7.jpg" alt="" />
-                  <div class="team-detail">
-                    <span>ITALIAN</span>
-                    <h2>July Roberts</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    </p>
-                  </div>
+                </div>
+                <div class="detail">
+                  <span>SPANISH</span>
+                  <h4>Hanna Alverez</h4>
+                  <p>Content in real-time will have multiple touchpoints.</p>
                 </div>
               </div>
-              <div class="team-col">
-                <div class="team-item">
+              <div
+                class="grid-item bottom wow animate__animated animate__fadeIn"
+                data-wow-delay="1s"
+              >
+                <div class="thumbnail">
                   <img src="./img/teacher_8.jpg" alt="" />
-                  <div class="team-detail">
-                    <span>ITALIAN</span>
-                    <h2>July Roberts</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    </p>
-                  </div>
+                </div>
+                <div class="detail">
+                  <span>ITALIAN</span>
+                  <h4>July Roberts</h4>
+                  <p>Capitalize on low hanging fruit to identify a ballpark.</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <section class="find_cource">
+          <div class="container_section">
+            <div class="left wow animate__animated animate__fadeInLeft">
+              <div class="thumbnail">
+                <img src="./img/conatct_inner.png" alt="" />
+              </div>
+            </div>
+            <div class="right wow animate__animated animate__fadeIn">
+              <div class="div">
+                <div class="form_container">
+                  <div class="form_content">
+                    <h4>Find Your Course</h4>
+                    <form action="">
+                      <div class="form-row row">
+                        <div class="left col-6">
+                          <span class="icon_name">
+                            <i class="fas fa-user"></i>
+                          </span>
+                          <input type="text" placeholder="Name" />
+                        </div>
+                        <div class="right col-6">
+                          <span class="icon_email">
+                            <i class="fas fa-envelope"></i>
+                          </span>
+                          <input type="text" placeholder="E-mail" />
+                        </div>
+                      </div>
+                      <div class="form_select">
+                        <span class="icon_english">
+                          <i class="fas fa-graduation-cap"></i>
+                        </span>
+                        <select name="" id="">
+                          <option value="">English</option>
+                          <option value="">French</option>
+                          <option value="">Spanish</option>
+                          <option value="">German</option>
+                        </select>
+                      </div>
+                      <div class="form-text">
+                        <span class="icon_textarea">
+                          <i class="fas fa-comment-alt"></i>
+                        </span>
+                        <textarea
+                          name=""
+                          id=""
+                          cols="40"
+                          rows="10"
+                          placeholder="Message"
+                        ></textarea>
+                      </div>
+                      <div class="form-submit">
+                        <button class="btn-submit">SEND</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="bottom_img">
+            <img src="./img/accent_bottom_wave_01.png" alt="" />
+          </div> -->
+        </section>
+        <footer>
+          <div class="section_background">
+            <div class="container_">
+              <div class="section_container row">
+                <div
+                  class="contact col-12 col-sm-6 col-lg-3 glob wow animate__animated animate__fadeIn"
+                  data-wow-delay="0.25s"
+                >
+                  <h3>Contact us</h3>
+                  <div class="detail">
+                    <p>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span> Franklin St, Greenpoint Ave </span>
+                    </p>
+                    <p>
+                      <i class="fas fa-phone"></i>
+                      <span> +2342 5446 67 </span>
+                    </p>
+                    <p>
+                      <i class="fas fa-clock"></i>
+                      <span> Monday - Friday: 8 AM - 5 PM </span>
+                    </p>
+                    <p>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="links col-12 col-sm-6 col-lg-3 glob wow animate__animated animate__fadeIn"
+                  data-wow-delay="0.5s"
+                >
+                  <h3>Quick Links</h3>
+                  <ul>
+                    <li class="first"><a href="#">Home</a></li>
+                    <li class="clone"><a href="#">Courses</a></li>
+                    <li class="clone"><a href="#">Schedule</a></li>
+                    <li class="clone"><a href="#">Blog</a></li>
+                  </ul>
+                </div>
+                <div
+                  class="about col-12 col-sm-6 col-lg-3 glob wow animate__animated animate__fadeIn"
+                  data-wow-delay="0.75s"
+                >
+                  <h3>About</h3>
+                  <ul>
+                    <li class="first"><a href="#">About Us</a></li>
+                    <li class="clone"><a href="#">Events</a></li>
+                    <li class="clone"><a href="#">Get Quote</a></li>
+                    <li class="clone"><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+                <div
+                  class="newsletter col-12 col-sm-6 col-lg-3 glob wow animate__animated animate__fadeIn"
+                  data-wow-delay="1s"
+                >
+                  <h3>Newsletter</h3>
+                  <form action="">
+                    <input type="text" placeholder="Your Email" />
+                    <button>SUBSRIBE</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
 
@@ -392,13 +561,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $("#sidebarCollapse").on("click", function () {
-          $("#sidebar").toggleClass("active");
-          $(this).toggleClass("active");
-        });
-      });
-    </script>
+    <script src="./controller/index.js"></script>
   </body>
 </html>
