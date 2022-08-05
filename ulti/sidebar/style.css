@@ -57,6 +57,7 @@ a:focus {
 #sidebar.active {
   margin-left: 0;
   /* overflow: hidden; */
+  position: fixed;
 }
 
 #sidebar .sidebar-header {

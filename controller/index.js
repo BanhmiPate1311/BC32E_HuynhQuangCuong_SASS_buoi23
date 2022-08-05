@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $(".navbar_toggler .open").on("click", function () {
     $("#sidebar").addClass("active");
+    document.querySelector("#content").style.marginLeft = "250px";
     document.querySelector(".navbar_brand").style.display = "none";
     document.querySelector(".navbar_toggler .open").style.display = "none";
     document.querySelector(".navbar_toggler .close").style.display = "block";
@@ -12,6 +13,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".navbar_toggler .close").on("click", function () {
     $("#sidebar").removeClass("active");
+    document.querySelector("#content").style.marginLeft = "0";
     document.querySelector(".navbar_brand").style.display = "block";
     document.querySelector(".navbar_toggler .open").style.display = "block";
     document.querySelector(".navbar_toggler .close").style.display = "none";
@@ -52,7 +54,7 @@ function scrollFunction() {
       document.querySelector(".nav-logo").style.display = "none";
       document.querySelector("#header .container_").style.justifyContent =
         "flex-end";
-      document.querySelector("#header").style.background = "#fff";
+      // document.querySelector("#header").style.background = "#fff";
       document.querySelector(".navbar_link .active").style.lineHeight = "48px";
     } else {
       document.querySelector(".nav-logo").style.display = "flex";
@@ -62,10 +64,12 @@ function scrollFunction() {
     }
   } else {
     document.getElementById("header").style.position = "absolute";
+    // document.querySelector("#header").style.marginLeft = "250px";
+
     document.querySelector(".nav-logo").style.display = "flex";
     document.querySelector("#header .container_").style.justifyContent =
       "space-between";
-    document.querySelector("#header").style.background = "transparent";
+    // document.querySelector("#header").style.background = "transparent";
     document.querySelector(".navbar_link .active").style.lineHeight = "80px";
   }
 }
